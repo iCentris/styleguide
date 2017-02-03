@@ -1,0 +1,34 @@
+{
+  "name": "styleguide",
+  "version": "0.1.0",
+  "description": "iCentris styleguide and pattern library",
+  "scripts": {
+    "lint": "eslint ./src --ext .js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "yarn run storybook",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
+  },
+  "author": "iCentris UX Team",
+  "repository" : {
+    "type" : "git",
+    "url" : "https://github.com/icentris/styleguide"
+  },
+  "license": "Apache-2.0",
+  "private": true,
+  "dependencies": {
+    "react": "15.4.2",
+    "react-bootstrap": "0.30.7",
+    "react-dom": "15.4.2"
+  },
+  "devDependencies": {
+    "@kadira/react-storybook-addon-info": "3.3.0",
+    "@kadira/storybook": "^2.21.0",
+    "babel-eslint": "7.1.1",
+    "eslint": "3.14.1",
+    "eslint-config-airbnb": "14.0.0",
+    "eslint-plugin-import": "2.2.0",
+    "eslint-plugin-jsx-a11y": "3.0.2",
+    "eslint-plugin-react": "6.9.0"
+  }
+}
