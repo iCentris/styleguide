@@ -11,7 +11,7 @@
    ========================================================================== */
 
 html {
-  font-family: sans-serif; /* 1 */
+  font-family: $font-stack-sans; /* 1 */
   line-height: 1.15; /* 2 */
   -ms-text-size-adjust: 100%; /* 3 */
   -webkit-text-size-adjust: 100%; /* 3 */
@@ -231,6 +231,13 @@ audio:not([controls]) {
 
 img {
   border-style: none;
+}
+
+/**
+ * Prevent media from expanding the size of the view window.
+ */
+img, svg, video, audio {
+  max-width: 100%;
 }
 
 /**

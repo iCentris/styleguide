@@ -1,0 +1,79 @@
+table {
+	width: 100%;
+	max-width: 100%;
+	thead,tbody,tfoot {
+		tr {
+			td{
+				padding: 8px;
+				line-height: 1.42857143;
+				vertical-align: top;
+				border-top: 1px solid #ddd;
+			}
+			th{
+				padding: 8px;
+				line-height: 1.42857143;
+				vertical-align: top;
+				border-bottom: 2px solid #ddd;
+			}
+		}
+	}
+	thead {
+		tr {
+			td{font-weight: 900;}
+		}
+	}
+	tbody {
+		tr {
+			td { background-color: #fff; }
+		}
+		tr.info {
+			td { background-color: $color-background-info; }
+		}
+		tr.success {
+			td { background-color: $color-background-success; }
+		}
+		tr.warning {
+			td { background-color: $color-background-warning; }
+		}
+		tr.danger {
+			td { background-color: $color-background-danger; }
+		}
+		tr.active {
+			td { background-color: $color-background-default; }
+		}
+	}
+}
+
+table.table-striped {
+	tbody {
+		tr {
+			td { background-color: #fff; }
+		}
+		tr:nth-of-type(odd) {
+			td { background-color: $color-default; }
+		}
+	}
+}
+
+table.table-hover {
+	tbody {
+		tr {
+			&:hover td{ background-color: darken($color-default,10%); }
+		}
+		tr.info {
+			&:hover td{ background-color: lighten($color-info,20%); }
+		}
+		tr.success {
+			&:hover td{ background-color: lighten($color-success,25%); }
+		}
+		tr.warning {
+			&:hover td{ background-color: lighten($color-warning,20%); }
+		}
+		tr.danger {
+			&:hover td{ background-color: lighten($color-danger,25%); }
+		}
+		tr.active {
+			&:hover td{ background-color: darken($color-default,10%); }
+		}
+	}
+}

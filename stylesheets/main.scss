@@ -24,7 +24,12 @@
 
 // 5. Components
 @import
-  'components/button';
+  'components/alerts';
+  'components/blockquotes';
+  'components/breadcrumbs';
+  'components/buttons';
+  'components/forms';
+  'components/tables';
 
 // 6. Page-specific styles
 @import

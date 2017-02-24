@@ -1,10 +1,12 @@
 import React from 'react';
 import { storiesOf, action } from '@kadira/storybook';
-import { Button } from 'react-bootstrap';
+import { RaisedButton } from 'material-ui';
+import { muiTheme } from 'storybook-addon-material-ui';
 
 storiesOf('Buttons', module)
+  .addDecorator(muiTheme())
   .addWithInfo('Simple Usage', 'This is basic usage', () => (
-    <Button>Default Button</Button>
+    <RaisedButton>Default Button</RaisedButton>
   ))
   .addWithInfo('Color Variations', 'These are the main color variations, based on the core color scheme.', () => (
     <div>
